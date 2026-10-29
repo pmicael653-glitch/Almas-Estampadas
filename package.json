@@ -1,0 +1,14 @@
+{
+  "name": "almas-estampadas",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.1.0",
+    "openai": "^5.20.0"
+  }
+}

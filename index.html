@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#151515">
+<title>Almas Estampadas | Moda unissex personalizada</title>
+<style>
+:root{--ink:#171717;--paper:#f7f5f0;--red:#e43d32;--blue:#2463eb;--yellow:#f5d547;--green:#20845b;--muted:#6d6d6d;--line:#e5e1d8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,Arial,sans-serif}button,input,select{font:inherit}button{cursor:pointer}.topbar{background:var(--ink);color:white;text-align:center;padding:9px 12px;font-size:.82rem}.topbar strong{color:var(--yellow)}header{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid var(--line);padding:15px clamp(16px,5vw,70px);display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font-weight:950;font-size:clamp(1.2rem,3vw,1.8rem);letter-spacing:-1px;text-transform:uppercase}.brand span{color:var(--red)}nav{display:flex;gap:20px;align-items:center;flex-wrap:wrap}nav a{color:var(--ink);text-decoration:none;font-size:.92rem;font-weight:700}.cart-open,.btn{border:0;background:var(--ink);color:white;border-radius:5px;padding:12px 16px;font-weight:800}.cart-open{white-space:nowrap}.hero{padding:clamp(38px,7vw,90px) clamp(18px,7vw,100px);background:var(--yellow);display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center;overflow:hidden}.eyebrow{text-transform:uppercase;letter-spacing:2px;font-size:.76rem;font-weight:900}.hero h1{font-size:clamp(2.7rem,7vw,6rem);line-height:.91;letter-spacing:-.07em;margin:16px 0}.hero h1 span{color:var(--red)}.hero p{font-size:1.08rem;line-height:1.6;max-width:550px}.hero-art{min-height:290px;display:flex;align-items:center;justify-content:center;position:relative}.shirt{width:min(250px,70%);aspect-ratio:.85;background:var(--red);clip-path:polygon(24% 0,39% 9%,61% 9%,76% 0,100% 20%,83% 39%,72% 30%,72% 100%,28% 100%,28% 30%,17% 39%,0 20%);filter:drop-shadow(12px 15px 0 #17171722);position:relative}.shirt:after{content:"ALMAS\\A ESTAMPADAS";white-space:pre;position:absolute;inset:42% 0 auto;text-align:center;color:white;font-weight:1000;font-size:clamp(15px,2vw,24px);line-height:1.1;letter-spacing:1px}.sticker{position:absolute;right:2%;bottom:10%;background:var(--blue);color:white;border-radius:50%;width:105px;height:105px;display:grid;place-items:center;text-align:center;font-weight:900;transform:rotate(10deg);padding:10px}.section{padding:55px clamp(18px,6vw,85px)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:15px;flex-wrap:wrap;margin-bottom:24px}.section h2{font-size:clamp(1.8rem,4vw,3rem);letter-spacing:-.05em;margin:0 0 8px}.muted{color:var(--muted)}.filters{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0 24px}.filter{background:white;border:1px solid var(--line);padding:9px 14px;border-radius:99px;font-weight:700}.filter.active{background:var(--ink);color:white}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:17px}.card{background:#fff;border:1px solid var(--line);border-radius:9px;overflow:hidden;display:flex;flex-direction:column}.product-art{height:220px;display:grid;place-items:center;position:relative;overflow:hidden;background:#ece8df}.product-art .shirt-mini{width:135px;height:155px;clip-path:polygon(24% 0,39% 9%,61% 9%,76% 0,100% 20%,83% 39%,72% 30%,72% 100%,28% 100%,28% 30%,17% 39%,0 20%);display:grid;place-items:center;text-align:center;color:white;font-weight:950;font-size:.8rem;white-space:pre-line;padding-top:20px;filter:drop-shadow(4px 5px 0 #0002)}.pants{width:95px;height:160px;background:var(--blue);clip-path:polygon(5% 0,95% 0,100% 100%,57% 100%,50% 47%,43% 100%,0 100%)}.coat{width:130px;height:155px;background:var(--green);clip-path:polygon(22% 0,40% 8%,60% 8%,78% 0,100% 20%,82% 43%,73% 34%,76% 100%,24% 100%,27% 34%,18% 43%,0 20%)}.badge{position:absolute;left:10px;top:10px;background:var(--red);color:white;padding:6px 8px;border-radius:3px;font-size:.72rem;font-weight:900}.card-body{padding:15px;display:flex;flex-direction:column;gap:9px;flex:1}.card h3{margin:0;font-size:1.05rem}.price-row{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}.price{font-weight:950;font-size:1.25rem}.old-price{color:#888;text-decoration:line-through;font-size:.9rem}.discount{color:var(--green);font-size:.8rem;font-weight:900}.card select,.custom-form select,.custom-form input,.checkout input{width:100%;padding:10px;border:1px solid #d4d0c8;border-radius:5px;background:white}.btn-red{background:var(--red)}.card .btn{margin-top:auto}.promo-box{background:var(--ink);color:white;padding:26px;border-radius:9px;display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap;margin-top:28px}.promo-box h3{margin:0 0 8px;font-size:1.5rem}.promo-box p{margin:0;color:#ddd}.promo-controls{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.promo-controls select{padding:10px;border-radius:5px}.custom-area{background:#fff}.custom-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:28px}.preview{min-height:310px;border-radius:9px;background:#f0ece3;display:grid;place-items:center;position:relative;padding:24px 16px 58px}.preview-meta{position:absolute;left:14px;right:14px;bottom:12px;text-align:center;font-size:.85rem;font-weight:800;color:#333}.preview-meta span{display:inline-block;background:#fff;padding:7px 10px;border-radius:99px;margin:3px}.preview #preview-art{display:grid;place-items:center;text-align:center;color:white;font-weight:950;white-space:pre-line;overflow-wrap:anywhere;padding:18px 10px}.preview .shirt-mini{width:180px;height:210px}.preview .pants{width:130px;height:220px}.preview .coat{width:180px;height:210px}.custom-form{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:.9rem;font-weight:800}.color-options{display:flex;gap:10px;flex-wrap:wrap}.swatch{width:34px;height:34px;border-radius:50%;border:3px solid white;outline:1px solid #bbb}.swatch.selected{outline:3px solid var(--ink)}.custom-note{font-size:.85rem;color:var(--muted);line-height:1.5}.cart-section{background:#eeece5}.cart-layout{display:grid;grid-template-columns:1.3fr .7fr;gap:24px;align-items:start}.cart-items,.checkout{background:#fff;border-radius:9px;padding:20px}.cart-item{display:grid;grid-template-columns:1fr auto auto;gap:15px;align-items:center;padding:15px 0;border-bottom:1px solid var(--line)}.item-title{font-weight:850}.item-sub{font-size:.83rem;color:var(--muted);margin-top:5px}.qty{display:flex;align-items:center;gap:8px}.qty button,.remove{border:1px solid var(--line);background:white;border-radius:5px;padding:6px 10px}.remove{color:var(--red)}.summary-line{display:flex;justify-content:space-between;gap:15px;margin:12px 0}.summary-total{font-size:1.3rem;font-weight:950;border-top:1px solid var(--line);padding-top:15px}.checkout{display:flex;flex-direction:column;gap:12px}.checkout h3{margin:0}.empty{color:var(--muted);padding:22px 0}.footer{background:var(--ink);color:white;padding:32px clamp(18px,6vw,85px);display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.footer p{margin:5px 0;color:#ccc}.small{font-size:.8rem;color:#aaa}.notice{padding:12px;background:#e7f7eb;color:#155e2d;border-radius:5px;margin-top:10px;display:none}
+@media(max-width:950px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{grid-template-columns:1fr .7fr}.cart-layout,.custom-layout{grid-template-columns:1fr}}
+@media(max-width:600px){header{position:static;align-items:flex-start;flex-direction:column}nav{gap:12px}nav a{font-size:.85rem}.hero{grid-template-columns:1fr;padding-top:40px}.hero-art{min-height:210px}.shirt{width:170px}.sticker{right:12%;width:82px;height:82px;font-size:.8rem}.section{padding-top:38px;padding-bottom:38px}.grid{gap:10px}.product-art{height:160px}.product-art .shirt-mini{transform:scale(.8)}.card-body{padding:11px}.card h3{font-size:.95rem}.price{font-size:1.1rem}.card .btn{padding:10px 8px;font-size:.82rem}.custom-form{grid-template-columns:1fr}.field.full{grid-column:auto}.cart-item{grid-template-columns:1fr auto;gap:8px}.cart-item .qty{grid-column:1}.cart-item .remove{grid-column:2;grid-row:1/3}.promo-box{padding:20px}}
+
+/* Assistente de estampas */
+.ai-launch{position:fixed;right:20px;bottom:20px;z-index:20;border:0;border-radius:999px;background:var(--red);color:#fff;padding:15px 18px;font-weight:900;box-shadow:0 8px 28px #0003;display:flex;gap:9px;align-items:center}
+.ai-panel{position:fixed;right:20px;bottom:84px;width:min(370px,calc(100vw - 28px));height:min(540px,calc(100vh - 115px));z-index:21;background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:0 16px 50px #0003;display:none;flex-direction:column;overflow:hidden}
+.ai-panel.open{display:flex}.ai-head{background:var(--ink);color:#fff;padding:15px;display:flex;align-items:center;justify-content:space-between;gap:10px}.ai-head strong{display:block}.ai-head small{color:#ddd}.ai-close{background:transparent;color:white;border:0;font-size:1.5rem;padding:2px 8px}.ai-messages{padding:14px;overflow:auto;flex:1;background:#faf9f6;display:flex;flex-direction:column;gap:10px}.ai-msg{max-width:90%;padding:10px 12px;border-radius:12px;line-height:1.45;font-size:.92rem;white-space:pre-wrap;overflow-wrap:anywhere}.ai-msg.bot{background:#fff;border:1px solid var(--line);align-self:flex-start}.ai-msg.user{background:#171717;color:#fff;align-self:flex-end}.ai-actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:5px}.ai-chip{border:1px solid #d8d3c8;background:#fff;border-radius:999px;padding:7px 10px;font-size:.8rem;font-weight:750}.ai-use{background:var(--yellow);border:0;border-radius:7px;padding:8px 10px;font-weight:900;margin-top:8px}.ai-compose{display:flex;gap:8px;padding:12px;border-top:1px solid var(--line)}.ai-compose input{flex:1;min-width:0;border:1px solid #d4d0c8;border-radius:8px;padding:11px}.ai-compose button{border:0;border-radius:8px;background:var(--red);color:#fff;padding:0 14px;font-weight:900}.ai-generated-image{display:block;width:100%;max-width:260px;border-radius:10px;margin-top:10px;background:#fff;border:1px solid var(--line)}.ai-status{font-size:.85rem;color:var(--muted);padding:6px 2px}.ai-disclaimer{padding:0 13px 10px;font-size:.72rem;color:var(--muted);background:#fff}
+@media(max-width:600px){.ai-launch{right:12px;bottom:12px;padding:13px 15px}.ai-panel{right:10px;bottom:72px;width:calc(100vw - 20px);height:min(520px,calc(100vh - 90px))}}
+
+</style>
+</head>
+<body>
+<div class="topbar">SEU ESTILO, SUAS REGRAS — <strong>ALMAS ESTAMPADAS</strong></div>
+<header>
+  <div class="brand">ALMAS <span>ESTAMPADAS.</span></div>
+  <nav><a href="#inicio">Início</a><a href="#loja">Loja</a><a href="#personalize">Personalize</a><a href="#promocoes">Promoções</a></nav>
+  <button class="cart-open" onclick="document.getElementById('carrinho').scrollIntoView({behavior:'smooth'})">🛒 Carrinho (<span id="cart-count">0</span>)</button>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div>
+    <div class="eyebrow">Moda unissex • Feita para expressar</div>
+    <h1>VISTA O QUE<br>VIVE NA SUA <span>ALMA.</span></h1>
+    <p>Roupas personalizadas, cores marcantes e estampas com identidade. Seu estilo não precisa de rótulos — só precisa ser seu.</p>
+    <a class="btn" href="#loja" style="display:inline-block;text-decoration:none">ENCONTRE SUA PEÇA ↘</a>
+  </div>
+  <div class="hero-art"><div class="shirt"></div><div class="sticker">SEJA<br>ÚNICO.<br>SEJA VOCÊ.</div></div>
+</section>
+
+<section class="section" id="loja">
+  <div class="section-head"><div><div class="eyebrow">Escolha sua vibe</div><h2>Peças que falam por você.</h2><p class="muted">Escolha tamanho e adicione ao carrinho. Os valores são exemplos editáveis.</p></div></div>
+  <div class="filters" id="filters">
+    <button class="filter active" data-category="Todos">Tudo</button><button class="filter" data-category="Camisas">Camisas</button><button class="filter" data-category="Calças">Calças</button><button class="filter" data-category="Casacos">Casacos</button>
+  </div>
+  <div class="grid" id="products"></div>
+  <div class="promo-box" id="promocoes">
+    <div><h3>Promoção do momento ⚡</h3><p>Escolha a categoria e o desconto. Você pode ativar ou desativar a promoção quando quiser.</p></div>
+    <div class="promo-controls">
+      <select id="promo-category" aria-label="Categoria da promoção"><option value="Todos">Todas as peças</option><option value="Camisas">Camisas</option><option value="Calças">Calças</option><option value="Casacos">Casacos</option></select>
+      <select id="promo-discount" aria-label="Percentual de desconto"><option value="0">Sem promoção</option><option value="20">20% OFF</option><option value="25">25% OFF</option></select>
+      <button class="btn btn-red" onclick="applyPromo()">APLICAR</button>
+    </div>
+  </div>
+  <p class="small" style="margin-top:12px">As promoções são controladas manualmente neste protótipo e ficam ativas enquanto a página estiver aberta. Para programar datas e fins de semana automaticamente, será necessário adicionar uma configuração persistente ou painel administrativo.</p>
+</section>
+
+<section class="section custom-area" id="personalize">
+  <div class="section-head"><div><div class="eyebrow">Crie do seu jeito</div><h2>Personalize sua peça.</h2><p class="muted">Escolha a peça, a cor, o tamanho e descreva a estampa que imagina.</p></div></div>
+  <div class="custom-layout">
+    <div class="preview"><div id="preview-art" class="shirt-mini" style="background:#e43d32">SUA<br>ESTAMPA</div><div class="preview-meta"><span id="preview-type">Camisa personalizada</span><span>Tamanho: <b id="preview-size">P</b></span></div></div>
+    <div>
+      <div class="custom-form">
+        <div class="field full"><label for="custom-type">Peça</label><select id="custom-type"><option value="Camisa personalizada" data-category="Camisas" data-price="35">Camisa personalizada — R$ 35,00</option><option value="Calça personalizada" data-category="Calças" data-price="125">Calça personalizada — R$ 125,00</option><option value="Casaco personalizado" data-category="Casacos" data-price="175">Casaco personalizado — R$ 175,00</option></select></div>
+        <div class="field"><label for="custom-size">Tamanho</label><select id="custom-size"><option>P</option><option>M</option><option>G</option><option>GG</option><option>GGG</option><option>XG</option></select></div>
+        <div class="field"><label>Cor (primárias e neutras)</label><div class="color-options" id="color-options"><button class="swatch selected" data-color="#e43d32" aria-label="Vermelho" style="background:#e43d32"></button><button class="swatch" data-color="#2463eb" aria-label="Azul" style="background:#2463eb"></button><button class="swatch" data-color="#f5d547" aria-label="Amarelo" style="background:#f5d547"></button><button class="swatch" data-color="#171717" aria-label="Preto" style="background:#171717"></button><button class="swatch" data-color="#ffffff" aria-label="Branco" style="background:white"></button></div></div>
+        <div class="field full"><label for="custom-print">Estampa ou frase</label><input id="custom-print" maxlength="45" placeholder="Ex.: desenho de sol, nome, frase curta"></div>
+        <div class="field full"><label for="custom-notes">Detalhes extras (opcional)</label><input id="custom-notes" maxlength="150" placeholder="Conte como você imagina a estampa"></div>
+      </div>
+      <p class="custom-note">A prévia mostra a cor e o texto da estampa como referência. A arte final e a disponibilidade precisam ser confirmadas com a loja pelo WhatsApp.</p>
+      <button class="btn btn-red" style="margin-top:10px" onclick="addCustom()">ADICIONAR PEÇA PERSONALIZADA</button>
+    </div>
+  </div>
+</section>
+
+<section class="section cart-section" id="carrinho">
+  <div class="section-head"><div><div class="eyebrow">Quase seu</div><h2>Seu carrinho.</h2><p class="muted">Aumente, diminua ou remova itens. O total é atualizado automaticamente.</p></div></div>
+  <div class="cart-layout">
+    <div class="cart-items" id="cart-items"><div class="empty">Seu carrinho está vazio. Escolha uma peça para começar!</div></div>
+    <div class="checkout">
+      <h3>Resumo do pedido</h3>
+      <div class="summary-line"><span>Subtotal</span><strong id="subtotal">R$ 0,00</strong></div>
+      <div class="summary-line"><span>Descontos</span><strong id="savings">R$ 0,00</strong></div>
+      <div class="summary-line summary-total"><span>Total</span><strong id="total">R$ 0,00</strong></div>
+      <div class="field"><label for="customer-name">Seu nome</label><input id="customer-name" autocomplete="name" placeholder="Nome para o pedido"></div>
+      <div class="field"><label for="customer-city">Cidade / entrega</label><input id="customer-city" placeholder="Cidade ou bairro (frete a combinar)"></div>
+      <button class="btn btn-red" onclick="checkoutWhatsApp()">FINALIZAR PELO WHATSAPP ↗</button>
+      <p class="custom-note">O WhatsApp abrirá com a lista dos itens e o total. O frete e o pagamento são combinados diretamente com a loja.</p>
+      <div class="notice" id="notice"></div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer"><div><div class="brand">ALMAS <span>ESTAMPADAS.</span></div><p>Moda unissex com personalidade.</p></div><div><p>Pedidos e dúvidas pelo WhatsApp</p><p>© <span id="year"></span> Almas Estampadas</p></div></footer>
+
+
+<button class="ai-launch" id="ai-launch" aria-controls="ai-panel" aria-expanded="false" onclick="toggleAI()">✦ Assistente de estampas</button>
+<section class="ai-panel" id="ai-panel" role="dialog" aria-label="Assistente de estampas" aria-modal="false">
+  <div class="ai-head"><div><strong>✦ Assistente Almas</strong><small>Vamos criar uma ideia para sua roupa</small></div><button class="ai-close" aria-label="Fechar chat" onclick="toggleAI(false)">×</button></div>
+  <div class="ai-messages" id="ai-messages" aria-live="polite"><div class="ai-msg bot">Oi! Posso ajudar a pensar em uma estampa. Me conte a vibe que você quer ou escolha uma ideia abaixo.</div><div class="ai-actions"><button class="ai-chip" onclick="aiQuick('Quero uma estampa streetwear')">Streetwear</button><button class="ai-chip" onclick="aiQuick('Quero uma estampa minimalista')">Minimalista</button><button class="ai-chip" onclick="aiQuick('Quero uma estampa colorida e divertida')">Colorida</button><button class="ai-chip" onclick="aiQuick('Quero uma estampa com meu nome')">Com meu nome</button></div></div>
+  <div class="ai-compose"><input id="ai-input" maxlength="700" placeholder="Descreva a estampa que imagina..." aria-label="Descreva sua estampa"><button onclick="sendAI()">Gerar estampa</button></div>
+  <div class="ai-disclaimer">Descreva a imagem que você quer e toque em “Gerar estampa”. A geração real exige que o serviço de IA esteja conectado. Confira a arte antes de produzir.</div>
+</section>
+
+<script>
+const WHATSAPP = "5551967676767";
+const products = [
+ {id:1,name:"Camisa Essencial",category:"Camisas",price:25,kind:"shirt",color:"#e43d32",print:"ALMAS"},
+ {id:2,name:"Camisa Estampada",category:"Camisas",price:35,kind:"shirt",color:"#2463eb",print:"EXPRESSE"},
+ {id:3,name:"Camisa Oversized",category:"Camisas",price:40,kind:"shirt",color:"#171717",print:"SEJA VOCÊ"},
+ {id:4,name:"Calça Street",category:"Calças",price:120,kind:"pants",color:"#2463eb",print:""},
+ {id:5,name:"Calça Cargo",category:"Calças",price:150,kind:"pants",color:"#20845b",print:""},
+ {id:6,name:"Casaco Urban",category:"Casacos",price:160,kind:"coat",color:"#171717",print:"AE"},
+ {id:7,name:"Casaco Premium",category:"Casacos",price:200,kind:"coat",color:"#e43d32",print:"ALMAS"}
+];
+const sizes=["P","M","G","GG","GGG","XG"];
+let cart=[];
+let activeCategory="Todos";
+let promo={category:"Todos",discount:0};
+let customColor="#e43d32";
+const money=n=>n.toLocaleString("pt-BR",{style:"currency",currency:"BRL"});
+function currentDiscount(category){return promo.discount && (promo.category==="Todos"||promo.category===category)?promo.discount:0}
+function productPrice(p){return p.price*(1-currentDiscount(p.category)/100)}
+function artMarkup(p){if(p.kind==="pants")return `<div class="pants" style="background:${p.color}"></div>`;if(p.kind==="coat")return `<div class="coat" style="background:${p.color}"></div>`;return `<div class="shirt-mini" style="background:${p.color}">${p.print}</div>`}
+function renderProducts(){
+ const shown=activeCategory==="Todos"?products:products.filter(p=>p.category===activeCategory);
+ document.getElementById("products").innerHTML=shown.map(p=>{const d=currentDiscount(p.category);return `<article class="card"><div class="product-art">${d?`<span class="badge">-${d}% OFF</span>`:""}${artMarkup(p)}</div><div class="card-body"><h3>${p.name}</h3><div class="muted" style="font-size:.85rem">${p.category} • Unissex</div><div class="price-row"><span class="price">${money(productPrice(p))}</span>${d?`<span class="old-price">${money(p.price)}</span><span class="discount">-${d}%</span>`:""}</div><label class="small" for="size-${p.id}">Tamanho</label><select id="size-${p.id}">${sizes.map(s=>`<option>${s}</option>`).join("")}</select><button class="btn" onclick="addProduct(${p.id})">ADICIONAR AO CARRINHO</button></div></article>`}).join("");
+}
+function addProduct(id){const p=products.find(x=>x.id===id);const size=document.getElementById(`size-${id}`).value;const key=`${id}|${size}`;const found=cart.find(i=>i.key===key);if(found)found.qty++;else cart.push({key,id,name:p.name,category:p.category,size,price:p.price,qty:1,custom:false});renderCart();}
+function addCustom(){const sel=document.getElementById("custom-type"),opt=sel.options[sel.selectedIndex],name=sel.value,category=opt.dataset.category,price=Number(opt.dataset.price),size=document.getElementById("custom-size").value,print=document.getElementById("custom-print").value.trim()||"Estampa a combinar",notes=document.getElementById("custom-notes").value.trim();cart.push({key:"custom-"+Date.now(),name,category,size,price,qty:1,custom:true,color:customColor,print,notes});renderCart();document.getElementById("carrinho").scrollIntoView({behavior:"smooth"});}
+function applyPromo(){promo={category:document.getElementById("promo-category").value,discount:Number(document.getElementById("promo-discount").value)};renderProducts();renderCart();const n=document.getElementById("notice");n.style.display="block";n.textContent=promo.discount?`${promo.discount}% de desconto ativado para ${promo.category==="Todos"?"todas as peças":promo.category}.`:"Promoção desativada.";setTimeout(()=>n.style.display="none",3500);}
+function totals(){let subtotal=0,total=0;cart.forEach(i=>{subtotal+=i.price*i.qty;total+=i.price*i.qty*(1-currentDiscount(i.category)/100)});return{subtotal,total,savings:subtotal-total}}
+function renderCart(){const el=document.getElementById("cart-items");document.getElementById("cart-count").textContent=cart.reduce((s,i)=>s+i.qty,0);if(!cart.length)el.innerHTML='<div class="empty">Seu carrinho está vazio. Escolha uma peça para começar!</div>';else el.innerHTML=cart.map((i,idx)=>{const d=currentDiscount(i.category),unit=i.price*(1-d/100);return `<div class="cart-item"><div><div class="item-title">${escapeHtml(i.name)} ${i.custom?"✦":""}</div><div class="item-sub">Tam. ${i.size}${i.color?` • cor ${i.color}`:""}${i.custom?` • Estampa: ${escapeHtml(i.print)}${i.notes?` • ${escapeHtml(i.notes)}`:""}`:""}${d?` • ${d}% OFF`:""}</div><strong>${money(unit*i.qty)}</strong></div><div class="qty"><button aria-label="Diminuir quantidade" onclick="changeQty(${idx},-1)">−</button><strong>${i.qty}</strong><button aria-label="Aumentar quantidade" onclick="changeQty(${idx},1)">+</button></div><button class="remove" onclick="removeItem(${idx})">Retirar</button></div>`}).join("");const t=totals();document.getElementById("subtotal").textContent=money(t.subtotal);document.getElementById("savings").textContent="- "+money(t.savings);document.getElementById("total").textContent=money(t.total);}
+function changeQty(idx,delta){cart[idx].qty+=delta;if(cart[idx].qty<=0)cart.splice(idx,1);renderCart()}
+function removeItem(idx){cart.splice(idx,1);renderCart()}
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function checkoutWhatsApp(){if(!cart.length){alert("Seu carrinho está vazio!");return}const name=document.getElementById("customer-name").value.trim(),city=document.getElementById("customer-city").value.trim();if(!name||!city){alert("Preencha seu nome e a cidade ou informação de entrega.");return}const t=totals();let msg=`Olá! Sou ${name} e gostaria de fazer um pedido na Almas Estampadas.\\nEntrega: ${city}\\n\\n`;cart.forEach((i,n)=>{const d=currentDiscount(i.category);msg+=`${n+1}. ${i.name} — tamanho ${i.size} — quantidade ${i.qty}\\n`;if(i.custom)msg+=`Cor: ${i.color}; estampa: ${i.print}${i.notes?`; detalhes: ${i.notes}`:""}\\n`;msg+=`Preço unitário: ${money(i.price*(1-d/100))}${d?` (${d}% OFF)`:""}\\nTotal do item: ${money(i.price*(1-d/100)*i.qty)}\\n\\n`});msg+=`Subtotal: ${money(t.subtotal)}\\nDescontos: ${money(t.savings)}\\nTOTAL DOS PRODUTOS: ${money(t.total)}\\n\\nPor favor, confirmem disponibilidade, frete e forma de pagamento.`;window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}`,"_blank","noopener");}
+
+function toggleAI(force){const panel=document.getElementById('ai-panel');const open=typeof force==='boolean'?force:!panel.classList.contains('open');panel.classList.toggle('open',open);document.getElementById('ai-launch').setAttribute('aria-expanded',String(open));if(open)setTimeout(()=>document.getElementById('ai-input').focus(),50)}
+function aiAddMessage(text,who='bot'){const box=document.getElementById('ai-messages');const msg=document.createElement('div');msg.className='ai-msg '+who;msg.textContent=text;box.appendChild(msg);box.scrollTop=box.scrollHeight;return msg}
+let generatedDesignUrl='';
+function aiUseDesign(text, imageUrl=''){
+ document.getElementById('custom-print').value=text.slice(0,45);
+ document.getElementById('custom-notes').value='Arte criada pelo Assistente Almas: '+text.slice(0,140);
+ if(imageUrl) generatedDesignUrl=imageUrl;
+ updatePreview();
+ document.getElementById('personalize').scrollIntoView({behavior:'smooth'});
+ toggleAI(false);
+}
+function showGeneratedImage(imageUrl, description, isDemo=false){
+ const box=document.getElementById('ai-messages');
+ const wrap=document.createElement('div');wrap.className='ai-msg bot';
+ const label=document.createElement('div');label.textContent=isDemo?'Prévia demonstrativa da sua ideia (modo local). Para gerar uma imagem original com IA, abra o projeto pelo servidor com a chave de API configurada.':'Aqui está a arte gerada pela IA a partir da sua descrição. Veja a imagem e, se gostar, aplique na prévia da roupa.';wrap.appendChild(label);
+ const img=document.createElement('img');img.className='ai-generated-image';img.alt=(isDemo?'Prévia ilustrativa: ':'Estampa criada pela IA: ')+description;img.src=imageUrl;wrap.appendChild(img);
+ const actions=document.createElement('div');actions.className='ai-actions';
+ const use=document.createElement('button');use.className='ai-use';use.textContent='Aplicar na roupa';use.onclick=()=>aiUseDesign(description,imageUrl);actions.appendChild(use);
+ const download=document.createElement('button');download.className='ai-chip';download.textContent='Baixar imagem';download.onclick=()=>{const a=document.createElement('a');a.href=imageUrl;a.download=isDemo?'previa-almas-estampadas.svg':'estampa-almas-estampadas.png';a.click()};actions.appendChild(download);
+ wrap.appendChild(actions);box.appendChild(wrap);box.scrollTop=box.scrollHeight;
+}
+function makeLocalPreviewArt(description){
+ const clean=String(description).replace(/[<>]/g,' ').replace(/\s+/g,' ').trim().slice(0,90);
+ const esc=clean.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&apos;');
+ const words=esc.split(' ');const lines=[];let line='';
+ words.forEach(word=>{const candidate=(line+' '+word).trim();if(candidate.length>19&&line){lines.push(line);line=word}else line=candidate});if(line)lines.push(line);const text=lines.slice(0,4).map((x,i)=>`<text x="500" y="${470+i*58}" text-anchor="middle" font-family="Arial,sans-serif" font-size="${x.length>15?27:38}" font-weight="900" fill="#171717">${x}</text>`).join('');
+ const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000"><rect width="1000" height="1000" rx="44" fill="#fff8dc"/><path d="M110 280 L500 90 L890 280 L760 400 L700 330 L700 800 L300 800 L300 330 L240 400Z" fill="#f5d547" stroke="#171717" stroke-width="18" stroke-linejoin="round"/><circle cx="500" cy="260" r="112" fill="#e43d32" stroke="#171717" stroke-width="14"/><path d="M430 260 L480 310 L575 205" fill="none" stroke="#fff" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>${text}<path d="M185 850 L815 850" stroke="#2463eb" stroke-width="18" stroke-linecap="round"/><text x="500" y="915" text-anchor="middle" font-family="Arial,sans-serif" font-size="30" font-weight="800" fill="#171717">ALMAS ESTAMPADAS · PRÉVIA</text></svg>`;
+ return 'data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
+}
+function aiSuggest(message){const m=message.toLowerCase();let title,ideas,extra='';
+ if(/nome|meu nome|iniciais/.test(m)){title='Uma estampa pessoal';ideas=['SEU NOME','INICIAIS • AE','NOME + ANO'];extra='Uma tipografia marcante ou letras pequenas no peito pode ficar bem legal.'}
+ else if(/street|urbano|skate|rap|streetwear/.test(m)){title='Vibe streetwear';ideas=['SEM LIMITES','MODO URBANO','MOVE DIFFERENT'];extra='Experimente letras grandes nas costas e um símbolo pequeno na frente.'}
+ else if(/minimal|simples|discret|clean/.test(m)){title='Minimalista';ideas=['menos, melhor','AE • ORIGINAL','siga seu ritmo'];extra='Use pouco texto, linhas limpas e uma cor de destaque.'}
+ else if(/color|divertid|alegre|vibrante|verão/.test(m)){title='Colorida e divertida';ideas=['GOOD VIBES','COR É ATITUDE','DIA DE SOL'];extra='Vermelho, azul e amarelo podem formar uma composição vibrante.'}
+ else if(/nature|flor|planta|sol|lua|estrela/.test(m)){title='Natureza e céu';ideas=['FEITO DE SOL','CRESÇA NO SEU TEMPO','STAY WILD'];extra='Um sol, uma flor ou pequenas estrelas podem acompanhar a frase.'}
+ else if(/frase|motiv|força|coragem|fé|amor/.test(m)){title='Frases com significado';ideas=['VAI NO SEU TEMPO','CORAGEM TODO DIA','ESPALHE O BEM'];extra='Escolha uma frase curta para continuar legível na roupa.'}
+ else if(/gamer|jogo|pixel|digital/.test(m)){title='Vibe gamer';ideas=['PLAYER ONE','GAME ON','LEVEL UP'];extra='Pixels, controles estilizados e letras geométricas combinam com esse tema.'}
+ else {title='Três ideias para explorar';ideas=['SEJA SUA VERSÃO','ALMAS EM MOVIMENTO','CRIE SEM MEDO'];extra='Posso adaptar a ideia para streetwear, minimalista, colorida, gamer, natureza ou com nome.'}
+ const box=document.getElementById('ai-messages');const wrap=document.createElement('div');wrap.className='ai-msg bot';const label=document.createElement('div');label.textContent=title+String.fromCharCode(10)+extra;wrap.appendChild(label);const actions=document.createElement('div');actions.className='ai-actions';ideas.forEach(idea=>{const b=document.createElement('button');b.className='ai-chip';b.textContent=idea;b.onclick=()=>{aiAddMessage('Quero usar: '+idea,'user');const response=aiAddMessage('Pronto! Coloquei essa frase na prévia da sua peça. Você pode editar o texto, escolher cor e tamanho.','bot');const use=document.createElement('button');use.className='ai-use';use.textContent='Usar esta estampa na peça';use.onclick=()=>aiUseDesign(idea);response.appendChild(use);box.scrollTop=box.scrollHeight};actions.appendChild(b)});wrap.appendChild(actions);box.appendChild(wrap);box.scrollTop=box.scrollHeight;
+}
+async function sendAI(){
+ const input=document.getElementById('ai-input');const description=input.value.trim();if(!description)return;
+ aiAddMessage(description,'user');input.value='';
+ const status=aiAddMessage('Criando sua estampa… isso pode levar alguns instantes.','bot');
+ const garment=document.getElementById('custom-type').value;
+ const color=customColor;
+ try{
+  const response=await fetch('/api/generate-design',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({description,garment,color})});
+  const data=await response.json().catch(()=>({}));
+  if(!response.ok)throw new Error(data.error||'Não foi possível gerar a imagem.');
+  status.remove();
+  const imageUrl=data.imageDataUrl||('data:image/png;base64,'+data.imageBase64);
+  showGeneratedImage(imageUrl,description);
+ }catch(err){
+  status.remove();
+  const localPreview=makeLocalPreviewArt(description);
+  showGeneratedImage(localPreview,description,true);
+  aiAddMessage('Não consegui acessar o serviço de geração de IA. Mostrei uma prévia ilustrativa para você testar o site; ela não é uma imagem gerada por IA. Para gerar a arte real, execute o servidor e configure a chave de API.');
+ }
+}
+function aiQuick(text){document.getElementById('ai-input').value=text;sendAI()}
+document.getElementById('ai-input').addEventListener('keydown',e=>{if(e.key==='Enter')sendAI()});
+
+function updatePreview(){
+ const type=document.getElementById("custom-type");
+ const option=type.options[type.selectedIndex];
+ const art=document.getElementById("preview-art");
+ const print=document.getElementById("custom-print").value.trim();
+ const kind=option.dataset.category;
+ art.className="";
+ art.classList.add(kind==="Calças"?"pants":kind==="Casacos"?"coat":"shirt-mini");
+ art.style.background=customColor;
+ art.textContent=print||( "SUA"+String.fromCharCode(10)+"ESTAMPA");
+ if(generatedDesignUrl){
+   art.textContent='';
+   art.style.position='relative';
+   const img=document.createElement('img');img.src=generatedDesignUrl;img.alt='Arte personalizada gerada pela IA';
+   img.style.cssText='position:absolute;left:22%;top:32%;width:56%;height:38%;object-fit:contain;filter:drop-shadow(0 1px 1px #0002);';
+   art.appendChild(img);
+ }
+ document.getElementById("preview-type").textContent=type.value;
+ document.getElementById("preview-size").textContent=document.getElementById("custom-size").value;
+}
+document.querySelectorAll(".filter").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll(".filter").forEach(x=>x.classList.remove("active"));b.classList.add("active");activeCategory=b.dataset.category;renderProducts()}));
+document.querySelectorAll(".swatch").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll(".swatch").forEach(x=>x.classList.remove("selected"));b.classList.add("selected");customColor=b.dataset.color;updatePreview()}));
+document.getElementById("custom-print").addEventListener("input",updatePreview);
+document.getElementById("custom-type").addEventListener("change",updatePreview);
+document.getElementById("custom-size").addEventListener("change",updatePreview);
+document.getElementById("year").textContent=new Date().getFullYear();
+renderProducts();renderCart();updatePreview();
+</script>
+</body>
+</html>
